@@ -1,0 +1,277 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+.maind{
+    width: 100%;
+    height: 100%;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main{
+    width: 97%;
+    height: 97%;
+    display: grid;
+    background: rgb(51, 50, 50);
+    grid-template-columns: 19% 19% 19% 19% 20%;
+    grid-template-rows: 33% 16% 15% 33%;
+    grid-template-areas:         "top-left top-left top-center1 top-center2 top-right"        "center-left1 center-left2 center center top-right"        "center-left1 center-left2 center center center-right"        "bottom-left bottom-left bottom-left bottom-right bottom-right";
+    gap: 12px;
+    padding: 1vw 1vw 2vw 1vw;
+    font-family: sans-serif;
+    border-radius: 11px;
+}
+.top-left{
+    grid-area:top-left;
+    border-radius:20px;
+    padding: 20px;
+    border:3px solid black;
+    box-shadow: 1px  1px  rgb(115, 115, 115);
+}
+.top-right{
+    grid-area:top-right;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+}
+.top-center1{
+    background-image: url("https://cdn.dribbble.com/userupload/25286575/file/original-f24fa97e3914b7002576af3171d31a62.png?format=webp&resize=400x300&vertical=center");
+    border:3px solid black;
+    box-shadow: 1px  1px  rgb(115, 115, 115);
+    grid-area:top-center1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius:20px;
+}
+.top-center2{
+    background-image: url("https://cdn.dribbble.com/userupload/27260897/file/original-cc083964df11f1ac06bb533cc19a5f75.png?format=webp&resize=400x300&vertical=center");
+    border:3px solid black;
+     box-shadow: 1px  1px  rgb(115, 115, 115);
+    border-radius:20px;
+    grid-area:top-center2;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.center-left1{
+    background-image: url("b2.jfif");
+    border:3px solid black;
+    box-shadow: 1px  1px  rgb(115, 115, 115);
+    border-radius:20px;
+    grid-area:center-left1;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.center-left2{
+    border-radius:20px;
+    grid-area:center-left2;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border:3px solid black;
+    box-shadow: 1px  1px  rgb(115, 115, 115);
+}
+.center{
+  background-image: url("https://cdn.dribbble.com/userupload/5790923/file/original-4b77d79608ff1e123afd33927dc746e2.png?resize=2048x1536&vertical=center");
+    border:3px solid black;
+    box-shadow: 1px  1px  rgb(115, 115, 115);
+    border-radius:20px;
+     grid-area:center;
+     background-size: cover;
+    background-position: center;
+}
+.center-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:3px solid black;
+    box-shadow: 1px  1px  rgb(115, 115, 115);
+    border-radius:20px;
+     grid-area:center-right;
+}
+.bottom-left{
+    border:3px solid black;
+    box-shadow: 1px  1px  rgb(115, 115, 115);
+    border-radius:20px;
+    grid-area:bottom-left;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.bottom-right{
+    border:3px solid black;
+    box-shadow: 1px  1px  rgb(115, 115, 115);
+    border-radius:20px;
+    grid-area:bottom-right;
+    padding: 20px;
+    position: relative;
+}
+.top-left img{
+    object-fit: cover;
+    height: 43px;
+    width: 43px;
+    border-radius: 50%;
+    object-position: top;
+    border: 2px solid white;
+}
+.contenttldiv{
+display: flex;
+align-items: center;
+gap: 6px;
+}
+.contenttldiv h4{
+    font-size: 13px;
+    color: white;
+}
+.contenttldiv p{
+    color:#565656;
+    font-size: 10px;
+    font-weight: 600;
+    margin-top: 3px;
+}
+.tlh3{
+    margin: 12px 0;
+    color: white;
+    font-weight: 100;
+    line-height: 26px;
+}
+.tlcontent{
+    font-size: 11px;
+    color: #565656;
+    font-weight: 600;
+    line-height: 17px;
+}
+.blcdiv{
+    align-self: center;
+}
+.blh3{
+    color: white;
+    font-weight: 100;
+    line-height: 26px;
+    margin-bottom: 8px;
+}
+.brh3{
+    color: white;
+    font-weight: 100;
+    line-height: 26px;
+    margin: 8px 0;
+}
+.cltext h3{
+    font-weight: 600;
+    font-size: 13px;
+}
+.cltext h2{
+    font-size: 18px;
+    margin-top: 11px;
+    font-weight: 600;
+    color: white;
+}
+.imgbtrdiv{
+    align-self: center;
+}
+.imgbtrdiv img{
+    height: 100px;
+    width: 100px;
+}
+.icd {
+display: flex;
+    justify-content: space-between
+}
+.icd div{
+    width: 45px;
+    padding: 15px;
+    height: 30px;
+    background-color: #1a1a1a;
+    color: gray;
+    font-size: 26px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 45px;
+    border-radius: 7px;
+}
+.icd img{
+    width: 26px;
+}
+.icd2 img{
+        width: 26px;
+}
+.icons{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.pcd{
+border-radius: 12px;
+    position: relative;
+    width: 66px;
+    height: 26px;
+    background-color: #373737;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.circledivm{
+    position: absolute;
+    right: -2px;
+}
+.circledivm i{
+    color: white;
+    font-size: 28px;
+}
+.ad{
+    border: 1px solid #252525;
+    width: 25px;
+    height: 25px;
+    background-color: #252525;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+.tr2{
+    height: 80%;
+    border:5px solid black;
+    box-shadow: 1px  1px  rgb(115, 115, 115);
+    border-radius: 20px;
+    padding: 10px;
+    position: relative;
+    color: white;
+}
+.icd2 div{
+    width: 40px;
+    padding: 15px;
+    height: 30px;
+    background-color: #1a1a1a;
+    color: gray;
+    font-size: 26px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35px;
+    border-radius: 7px;
+}
+.tr2 h4{
+    font-size: 13px;
+    margin-top: 10px;
+}
+.ad{
+    position: absolute;
+    right: 17px;
+    bottom: 14px;
+}
+.tr2 h6{
+    color: #565656;
+}
